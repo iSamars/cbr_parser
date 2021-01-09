@@ -2,7 +2,7 @@ require 'faraday'
 require 'nokogiri'
 require 'csv'
 
-date_mount_ago = (Date.today - 30).strftime('%d/%m/%Y')
+date_month_ago = (Date.today - 30).strftime('%d/%m/%Y')
 date_now = Date.today.strftime('%d/%m/%Y')
 
 begin
