@@ -11,7 +11,7 @@ rescue StandardError
   puts 'Connection error!'
 end
 
-xml = Nokogiri::HTML(doc)
+xml = Nokogiri::Slop(doc)
 
 CSV.open('data.csv', 'w', write_headers: true, headers: %w[date value]) do |csv|
   xml.xpath('//Record').each do |rec|
